@@ -1,0 +1,68 @@
+SIMULATION_TYPE        1
+RESTART                0
+TEMP                   1.2
+NPART                  108
+RHO                    0.05
+R_CUT                  5.0
+DELTA                  2.5
+NBLOCKS                10
+NSTEPS                 10000
+E_STEPS                5000
+
+ENDINPUT
+
+/////SOLID
+SIMULATION_TYPE        0/1
+RESTART                0
+TEMP                   1.55 // 0.8
+NPART                  108
+RHO                    1.1
+R_CUT                  2.2
+DELTA                  0.0005/0.055
+NBLOCKS                20
+NSTEPS                 2000
+E_STEPS                2000
+
+ENDINPUT
+
+//////LIQUID
+SIMULATION_TYPE        0/1
+RESTART                0
+TEMP                   1.95 // 1.1
+NPART                  108
+RHO                    0.8
+R_CUT                  2.5
+DELTA                  0.0005/0.1
+NBLOCKS                20
+NSTEPS                 2000
+E_STEPS                4000
+
+ENDINPUT
+
+/////GAS
+SIMULATION_TYPE        0/1
+RESTART                0
+TEMP                   0.96 // 1.2
+NPART                  108
+RHO                    0.05
+R_CUT                  5.0
+DELTA                  0.0005/2.5
+NBLOCKS                10
+NSTEPS                 10000
+E_STEPS                5000
+
+ENDINPUT
+
+//////ISING
+SIMULATION_TYPE        2/3    1.0    0.0
+RESTART                0
+TEMP                   1.0
+NPART                  50
+RHO                    1.0
+R_CUT                  0.0
+DELTA                  0.0
+NBLOCKS                20
+NSTEPS                 20000
+
+ENDINPUT
+

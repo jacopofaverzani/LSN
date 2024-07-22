@@ -1,0 +1,4 @@
+Accettazione per lo stato fondamentale, probabilità di transizione uniforme:    0.507486
+Accettazione per lo stato eccitato, probabilità di transizione uniforme:    0.497515
+Accettazione per lo stato fondamentale, probabilità di transizione normale multivariata:    0.504806
+Accettazione per lo stato eccitato, probabilità di transizione normale multivariata:    0.504921

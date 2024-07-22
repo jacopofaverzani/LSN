@@ -1,0 +1,11 @@
+Tipo simulazione: quadrato
+Numero di città: 34
+Dimensione della popolazione: 1000
+Numero di generazioni: 1000
+Probabilità mutazione 1: 0.07
+Probabilità mutazione 2: 0.07
+Probabilità mutazione 3: 0.07
+Probabilità mutazione 4: 0.07
+Esponente selezione: 1.4
+Probabilità crossover: 0.85
+Inizializzazione completata!

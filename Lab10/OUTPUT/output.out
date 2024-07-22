@@ -1,0 +1,13 @@
+Tipo di simulazione: province
+Numero di nodi: 10
+Numero di città: 110
+Dimensione della popolazione per ogni nodo: 150
+Numero di generazioni: 2000
+Probabilità mutazione 1: 0.07
+Probabilità mutazione 2: 0.07
+Probabilità mutazione 3: 0.07
+Probabilità mutazione 4: 0.07
+Esponente selezione: 1.7
+Probabilità crossover: 0.75
+Frequenza migrazione: 10
+Inizializzazione completata!
