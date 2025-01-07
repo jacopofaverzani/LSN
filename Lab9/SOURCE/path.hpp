@@ -22,13 +22,13 @@ public:
     // Metodo per ottenere l'etichetta della città in una posizione specifica del percorso
     unsigned int get_city_label(unsigned int pos) const { return _path(pos); }
 
-    // Metodo per ottenere il valore della perdita del percorso
+    // Metodo per ottenere il valore della loss del percorso
     double get_loss() const { return _loss; }
 
     // Metodo per impostare l'etichetta della città in una posizione specifica del percorso
     void set_city_label(unsigned int label, unsigned int pos) { _path(pos) = label; }
 
-    // Metodo per impostare il valore della perdita del percorso
+    // Metodo per impostare il valore della loss del percorso
     void set_loss(double loss) { _loss = loss; }
 };
 
