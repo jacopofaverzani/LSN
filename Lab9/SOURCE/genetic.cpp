@@ -153,10 +153,10 @@ void Genetic::loss_function(unsigned int i) {
     _path(i).set_loss(loss); // Imposta la perdita per il percorso
 }
 
-// Ordina la popolazione di percorsi in base al valore della funzione di perdita
+// Ordina la popolazione di percorsi in base al valore della funzione di costo
 void Genetic::order() {
     auto compare = [](const Path &a, const Path &b) {
-        return a.get_loss() < b.get_loss(); // Ordina i percorsi in base al valore della funzione di perdita
+        return a.get_loss() < b.get_loss(); // Ordina i percorsi in base al valore della funzione di costo
     };
 
     // Converti il field in un std::vector per usare std::sort
