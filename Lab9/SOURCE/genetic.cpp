@@ -104,7 +104,7 @@ void Genetic::initialize() {
         check_path(_path(i).get_path()); // Verifica del percorso
     }
 
-    // Creazione dei file di output per la perdita e la media delle perdite
+    // Creazione dei file di output per la loss e la media delle loss
     ofstream out_loss("../OUTPUT/loss.out");
     if (!out_loss.is_open()) {
         cerr << "Errore: non riesco ad aprire loss.out" << endl;
@@ -138,7 +138,7 @@ void Genetic::check_path(const vec path) {
     assert(elements.size() == _num_cities - 1 && "L'insieme deve contenere tutti i numeri da 1 a _num_cities - 1 esattamente una volta");
 }
 
-// Calcola la funzione di perdita per un percorso
+// Calcola la funzione di costo per un percorso
 void Genetic::loss_function(unsigned int i) {
     double loss = 0.0;
     vec distance;
