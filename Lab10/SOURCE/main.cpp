@@ -81,7 +81,7 @@ int main(int argc, char *argv[]) {
             out_ave << i << std::setw(22) << average_best << std::endl;
         }
 
-        // Esegue la migrazione se è il turno di migrare
+        // Esegue la migrazione
         if (i % mig_freq == 0) {
             GA.migrate();
             GA.order();  // Ordina i percorsi dopo la migrazione
