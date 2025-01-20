@@ -40,7 +40,7 @@ int main(int argc, char *argv[]) {
     GA.order();  // Ordina i percorsi in base alla loro loss
     local_loss.value = GA.get_loss(0);  // Salva la loss del miglior percorso locale
 
-    // Scrive la perdita minima globale nel file di output
+    // Scrive la loss minima globale nel file di output
     std::ofstream out_loss("../OUTPUT/loss.out", std::ios::app);
     MPI_Reduce(&local_loss, &best_loss, 1, MPI_DOUBLE_INT, MPI_MINLOC, 0, MPI_COMM_WORLD);
     if (rank == 0) {
