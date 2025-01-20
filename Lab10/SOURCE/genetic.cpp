@@ -491,7 +491,7 @@ void Genetic::migrate() {
         check_path(_path(_population_size - 1 - i).get_path());
     }
 
-    // Ricalcola la funzione di perdita per gli individui migrati
+    // Ricalcola la funzione di costo per gli individui migrati
     for (unsigned int i = _population_size - 1 - num_to_migrate; i < _population_size; i++) {
         this->loss_function(i);
     }
