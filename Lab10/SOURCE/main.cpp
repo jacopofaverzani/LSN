@@ -26,19 +26,19 @@ int main(int argc, char *argv[]) {
     double average_best;
 
     struct {
-        double value;  // Valore della funzione di perdita
+        double value;  // Valore della funzione di costo
         int rank;      // Rango del processo che ha ottenuto il valore
     } local_loss, best_loss;
 
     local_loss.rank = rank;  // Imposta il rango locale
 
-    // Calcola la funzione di perdita per tutti i percorsi iniziali
+    // Calcola la funzione di costo per tutti i percorsi iniziali
     for (unsigned int i = 0; i < population; i++) {
         GA.loss_function(i);
     }
     
-    GA.order();  // Ordina i percorsi in base alla loro perdita
-    local_loss.value = GA.get_loss(0);  // Salva la perdita del miglior percorso locale
+    GA.order();  // Ordina i percorsi in base alla loro loss
+    local_loss.value = GA.get_loss(0);  // Salva la loss del miglior percorso locale
 
     // Scrive la perdita minima globale nel file di output
     std::ofstream out_loss("../OUTPUT/loss.out", std::ios::app);
@@ -47,7 +47,7 @@ int main(int argc, char *argv[]) {
         out_loss << "0" << std::setw(22) << best_loss.value << std::endl;
     }
 
-    // Scrive la perdita media globale nel file di output
+    // Scrive la loss media globale nel file di output
     std::ofstream out_ave("../OUTPUT/ave_loss.out", std::ios::app);
     for (unsigned int i = 0; i < half_pop; i++) {
         average_local += GA.get_loss(i);
